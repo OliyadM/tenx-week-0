@@ -33,3 +33,10 @@ To test the setup, I tasked the AI agent with creating a date-utility module.
 
 ---
 **Submission Link:** [https://github.com/OliyadM/tenx-week-0](https://github.com/OliyadM/tenx-week-0)
+## 7. Behavioral Analysis & Experimental Discovery
+During the final phase of development, I conducted a "black-box" experiment to test the persistence of the AI agent's behavior.
+
+- **The Experiment:** I renamed `.github/copilot-instructions.md` to `OFF-instructions.md` and requested a new BMI utility.
+- **The Observation:** Surprisingly, the agent continued to follow the "Plan-Execute-Verify" pattern and even maintained the documentation style established in previous tasks.
+- **Key Insight:** This confirms that the AI agent uses **In-Context Learning (ICL)**. It isn't just following the rules file; it is "reading the room" by analyzing existing artifacts like `utils.js` and `test-days.js`. 
+- **Conclusion:** Establishing a strong "Gold Standard" of code early in the project is just as important as the rules file itself, as the agent naturally gravitates toward the existing quality of the repository.
